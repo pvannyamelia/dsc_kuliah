@@ -1,0 +1,288 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://deepenglish.com/wp-content/themes/deep-english/js/money.min.js?ver=1.0.0"></script>
+    <script type="text/javascript" src="https://deepenglish.com/wp-content/themes/deep-english/js/accounting.min.js?ver=1.0.0"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <style>
+
+        .currency-popup {
+            text-align: center;
+        }
+        .main-currencies-wrap {
+            max-width: 80%;
+            margin:0 auto;
+            overflow: hidden;
+            font-size:12px;
+        }
+        .main-currencies-parent {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .c-grey .c-child {
+            background: #f1f1f1;
+        }
+        .c-child {
+            padding:3px 10px 5px 10px;
+        }
+        .c-flag {
+            flex-basis:50px;
+        }
+        .c-country {
+            flex-basis:150px;
+        }
+        .c-code {
+            flex-basis:80px;
+        }
+        .c-amount {
+            flex-basis:150px;
+            text-align: right;
+        }
+        .c-flag img {
+            vertical-align: middle;
+            max-height:14px;
+        }
+        .select2-results li{
+            text-align: left;
+        }
+        .currency-dropdown {
+            margin:20px 0;
+        }
+        
+        .charged-usd {
+            font-size:10px;
+            margin-top:10px;
+        }
+
+        .ts-button-inline {
+            background-color: #2a5477;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            display:inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top:10px;
+            padding: 5px 24px;
+            text-transform: uppercase;
+            text-decoration:none;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 479px) {
+            .main-currencies-wrap {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+       
+        <script type="text/javascript">// <![CDATA[
+            jQuery(document).ready(function($){
+            fx.base = "USD";
+            fx.settings = {
+                from : "USD"
+            };
+        
+            var amount = 99.00; 
+        
+            $.getJSON(
+                'https://openexchangerates.org/api/latest.json?app_id=5e709d7b479d4352a05e0065113fcf35',
+                function(data) {
+                    // Check money.js has finished loading:
+                    if ( typeof fx !== "undefined" && fx.rates ) {
+                        fx.rates = data.rates;
+                        fx.base = data.base;
+                    } else {
+                        // If not, apply to fxSetup global:
+                        var fxSetup = {
+                            rates : data.rates,
+                            base : data.base
+                        }
+                    }
+        
+                    // now that we have exchange rates, add a few to our page
+                    var USD = fx.convert(amount, {to: "USD"});
+                    var EUR = fx.convert(amount, {to: "EUR"});
+                    var BRL = fx.convert(amount, {to: "BRL"});
+                    var RUB = fx.convert(amount, {to: "RUB"});
+                    var KRW = fx.convert(amount, {to: "KRW"});
+                    var RON = fx.convert(amount, {to: "RON"});
+                    var THB = fx.convert(amount, {to: "THB"});
+                    var TRY = fx.convert(amount, {to: "TRY"});
+                    var ILS = fx.convert(amount, {to: "ILS"});
+                    var AED = fx.convert(amount, {to: "AED"});
+                    var CHF = fx.convert(amount, {to: "CHF"});
+                    var ALL = fx.convert(amount, {to: "ALL"});
+                    var ARS = fx.convert(amount, {to: "ARS"});
+                    var AUD = fx.convert(amount, {to: "AUD"});
+                    var CAD = fx.convert(amount, {to: "CAD"});
+                    var CLP = fx.convert(amount, {to: "CLP"});
+                    var CNY = fx.convert(amount, {to: "CNY"});
+                    var COP = fx.convert(amount, {to: "COP"});
+                    var CRC = fx.convert(amount, {to: "CRC"});
+                    var HRK = fx.convert(amount, {to: "HRK"});
+                    var CZK = fx.convert(amount, {to: "CZK"});
+                    var DKK = fx.convert(amount, {to: "DKK"});
+                    var EGP = fx.convert(amount, {to: "EGP"});
+                    var HKD = fx.convert(amount, {to: "HKD"});
+                    var HUF = fx.convert(amount, {to: "HUF"});
+                    var ISK = fx.convert(amount, {to: "ISK"});
+                    var INR = fx.convert(amount, {to: "INR"});
+                    var IDR = fx.convert(amount, {to: "IDR"});
+                    var JPY = fx.convert(amount, {to: "JPY"});
+                    var MYR = fx.convert(amount, {to: "MYR"});
+                    var MXN = fx.convert(amount, {to: "MXN"});
+                    var NZD = fx.convert(amount, {to: "NZD"});
+                    var NOK = fx.convert(amount, {to: "NOK"});
+                    var OMR = fx.convert(amount, {to: "OMR"});
+                    var PEN = fx.convert(amount, {to: "PEN"});
+                    var PHP = fx.convert(amount, {to: "PHP"});
+                    var PLN = fx.convert(amount, {to: "PLN"});
+                    var SAR = fx.convert(amount, {to: "SAR"});
+                    var RSD = fx.convert(amount, {to: "RSD"});
+                    var SGD = fx.convert(amount, {to: "SGD"});
+                    var SOS = fx.convert(amount, {to: "SOS"});
+                    var LKR = fx.convert(amount, {to: "LKR"});
+                    var SEK = fx.convert(amount, {to: "SEK"});
+                    var TWD = fx.convert(amount, {to: "TWD"});
+                    var UAH = fx.convert(amount, {to: "UAH"});
+                    var GBP = fx.convert(amount, {to: "GBP"});
+                    var UYU = fx.convert(amount, {to: "UYU"});
+                    var VND = fx.convert(amount, {to: "VND"});
+        
+                    // we can now use the accounting.js library to format the numbers properly
+                    USD = accounting.formatMoney(USD, "$ ", 2, ",", ".");
+                    EUR = accounting.formatMoney(EUR, "€ ", 2, ",", ".");
+                    BRL = accounting.formatMoney(BRL, "R$ ", 2, ",", ".");
+                    RUB = accounting.formatMoney(RUB, "₽ ", 2, ",", ".");
+                    KRW = accounting.formatMoney(KRW, "₩ ", 2, ",", ".");
+                    RON = accounting.formatMoney(RON, "lei ", 2, ",", ".");
+                    THB = accounting.formatMoney(THB, "฿ ", 2, ",", ".");
+                    TRY = accounting.formatMoney(TRY, "₺ ", 2, ",", ".");
+                    ILS = accounting.formatMoney(ILS, "₪ ", 2, ",", ".");
+                    AED = accounting.formatMoney(AED, "د.إ ", 2, ",", ".");
+                    CHF = accounting.formatMoney(CHF, "SFr ", 2, ",", ".");
+                    ALL = accounting.formatMoney(ALL, "L ", 2, ",", ".");
+                    ARS = accounting.formatMoney(ARS, "$ ", 2, ",", ".");
+                    AUD = accounting.formatMoney(AUD, "$ ", 2, ",", ".");
+                    CAD = accounting.formatMoney(CAD, "C$ ", 2, ",", ".");
+                    CLP = accounting.formatMoney(CLP, "$ ", 2, ",", ".");
+                    CNY = accounting.formatMoney(CNY, "¥ ", 2, ",", ".");
+                    COP = accounting.formatMoney(COP, "$ ", 2, ",", ".");
+                    CRC = accounting.formatMoney(CRC, "₡ ", 2, ",", ".");
+                    HRK = accounting.formatMoney(HRK, "kn ", 2, ",", ".");
+                    CZK = accounting.formatMoney(CZK, "Kč ", 2, ",", ".");
+                    DKK = accounting.formatMoney(DKK, "kr ", 2, ",", ".");
+                    EGP = accounting.formatMoney(EGP, "ج.م ", 2, ",", ".");
+                    HKD = accounting.formatMoney(HKD, "HK$ ", 2, ",", ".");
+                    HUF = accounting.formatMoney(HUF, "Ft ", 2, ",", ".");
+                    ISK = accounting.formatMoney(ISK, "kr ", 2, ",", ".");
+                    INR = accounting.formatMoney(INR, "Rs. ", 2, ",", ".");
+                    IDR = accounting.formatMoney(IDR, "Rp ", 2, ",", ".");
+                    JPY = accounting.formatMoney(JPY, "¥ ", 2, ",", ".");
+                    MYR = accounting.formatMoney(MYR, "RM ", 2, ",", ".");
+                    MXN = accounting.formatMoney(MXN, "$ ", 2, ",", ".");
+                    NZD = accounting.formatMoney(NZD, "$ ", 2, ",", ".");
+                    NOK = accounting.formatMoney(NOK, "kr ", 2, ",", ".");
+                    OMR = accounting.formatMoney(OMR, "ر.ع. ", 2, ",", ".");
+                    PEN = accounting.formatMoney(PEN, "S/. ", 2, ",", ".");
+                    PHP = accounting.formatMoney(PHP, "₱ ", 2, ",", ".");
+                    PLN = accounting.formatMoney(PLN, "zł ", 2, ",", ".");
+                    SAR = accounting.formatMoney(SAR, "ر.س ", 2, ",", ".");
+                    RSD = accounting.formatMoney(RSD, "РСД ", 2, ",", ".");
+                    SGD = accounting.formatMoney(SGD, "S$ ", 2, ",", ".");
+                    SOS = accounting.formatMoney(SOS, "So. ", 2, ",", ".");
+                    LKR = accounting.formatMoney(LKR, "ரூ ", 2, ",", ".");
+                    SEK = accounting.formatMoney(SEK, "kr ", 2, ",", ".");
+                    TWD = accounting.formatMoney(TWD, "NT$ ", 2, ",", ".");
+                    UAH = accounting.formatMoney(UAH, " ", 2, ",", ".");
+                    GBP = accounting.formatMoney(GBP, "£ ", 2, ",", ".");
+                    UYU = accounting.formatMoney(UYU, "UYU ", 2, ",", ".");
+                    VND = accounting.formatMoney(VND, "₫ ", 2, ",", ".");
+
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent c-grey"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/us.svg"></div><div class="c-country c-child">USA</div><div class="c-code c-child">USD</div><div class="c-amount c-child">' + USD + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/europa.svg"></div><div class="c-country c-child">Europe</div><div class="c-code c-child">EUR</div><div class="c-amount c-child">' + EUR + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent c-grey"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/br.svg"></div><div class="c-country c-child">Brazil</div><div class="c-code c-child">BRL</div><div class="c-amount c-child">' + BRL + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/ru.svg"></div><div class="c-country c-child">Russia</div><div class="c-code c-child">RUB</div><div class="c-amount c-child">' + RUB + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent c-grey"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/kr.svg"></div><div class="c-country c-child">South Korea</div><div class="c-code c-child">KRW</div><div class="c-amount c-child">' + KRW + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/ro.svg"></div><div class="c-country c-child">Romania</div><div class="c-code c-child">RON</div><div class="c-amount c-child">' + RON + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent c-grey"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/th.svg"></div><div class="c-country c-child">Thailand</div><div class="c-code c-child">THB</div><div class="c-amount c-child">' + THB + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/tr.svg"></div><div class="c-country c-child">Turkey</div><div class="c-code c-child">TRY</div><div class="c-amount c-child">' + TRY + '</div>');
+                    $(".main-currencies-wrap").append('<div class="main-currencies-parent c-grey"><div class="c-flag c-child"><img src="https://deepenglish.com/wp-content/themes/deep-english/images/flags/il.svg"></div><div class="c-country c-child">Israel</div><div class="c-code c-child">ILS</div><div class="c-amount c-child">' + ILS + '</div>');
+
+                    $(".currencies").append('<option>Albania - ALL: <strong>' + ALL + '</strong></option>');
+                    $(".currencies").append('<option>Argentina - ARS: <strong>' + ARS + '</strong></option>');
+                    $(".currencies").append('<option>Australia - AUD: <strong>' + AUD + '</strong></option>');
+                    $(".currencies").append('<option>Canada - CAD: <strong>' + CAD + '</strong></option>');
+                    $(".currencies").append('<option>Chile - CLP: <strong>' + CLP + '</strong></option>');
+                    $(".currencies").append('<option>China - CNY: <strong>' + CNY + '</strong></option>');
+                    $(".currencies").append('<option>Colombia - COP: <strong>' + COP + '</strong></option>');
+                    $(".currencies").append('<option>Costa Rica - CRC: <strong>' + CRC + '</strong></option>');
+                    $(".currencies").append('<option>Croatia - HRK: <strong>' + HRK + '</strong></option>');
+                    $(".currencies").append('<option>Czech Koruna - CZK: <strong>' + CZK + '</strong></option>');
+                    $(".currencies").append('<option>Denmark - DKK: <strong>' + DKK + '</strong></option>');
+                    $(".currencies").append('<option>Egypt - EGP: <strong>' + EGP + '</strong></option>');
+                    $(".currencies").append('<option>Hong Kong - HKD: <strong>' + HKD + '</strong></option>');
+                    $(".currencies").append('<option>Hungary - HUF: <strong>' + HUF + '</strong></option>');
+                    $(".currencies").append('<option>Iceland - ISK: <strong>' + ISK + '</strong></option>');
+                    $(".currencies").append('<option>India - INR: <strong>' + INR + '</strong></option>');
+                    $(".currencies").append('<option>Indonesia - IDR: <strong>' + IDR + '</strong></option>');
+                    $(".currencies").append('<option>Japan - JPY: <strong>' + JPY + '</strong></option>');
+                    $(".currencies").append('<option>Malaysia - MYR: <strong>' + MYR + '</strong></option>');
+                    $(".currencies").append('<option>Mexico - MXN: <strong>' + MXN + '</strong></option>');
+                    $(".currencies").append('<option>New Zealand - NZD: <strong>' + NZD + '</strong></option>');
+                    $(".currencies").append('<option>Norway - NOK: <strong>' + NOK + '</strong></option>');
+                    $(".currencies").append('<option>Oman - OMR: <strong>' + OMR + '</strong></option>');
+                    $(".currencies").append('<option>Peru - PEN: <strong>' + PEN + '</strong></option>');
+                    $(".currencies").append('<option>Philippines - PHP: <strong>' + PHP + '</strong></option>');
+                    $(".currencies").append('<option>Poland - PLN: <strong>' + PLN + '</strong></option>');
+                    $(".currencies").append('<option>Saudi Arabia - SAR: <strong>' + SAR + '</strong></option>');
+                    $(".currencies").append('<option>Serbia - RSD: <strong>' + RSD + '</strong></option>');
+                    $(".currencies").append('<option>Singapore - SGD: <strong>' + SGD + '</strong></option>');
+                    $(".currencies").append('<option>Somalia - SOS: <strong>' + SOS + '</strong></option>');
+                    $(".currencies").append('<option>Sri Lanka - LKR: <strong>' + LKR + '</strong></option>');
+                    $(".currencies").append('<option>Sweden - SEK: <strong>' + SEK + '</strong></option>');
+                    $(".currencies").append('<option>Switzerland - CHF: <strong>' + CHF + '</strong></option>');
+                    $(".currencies").append('<option>Taiwan - TWD: <strong>' + TWD + '</strong></option>');
+                    $(".currencies").append('<option>Ukraine - UAH: <strong>' + UAH + '</strong></option>');
+                    $(".currencies").append("<option>United Arab Emirates - AED: " + AED + "</option>");
+                    $(".currencies").append('<option>United Kingdom - GBP: <strong>' + GBP + '</strong></option>');
+                    $(".currencies").append('<option>Uruguay - UYU: <strong>' + UYU + '</strong></option>');
+                    $(".currencies").append('<option>Vietnam - VND: <strong>' + VND + '</strong></option>');
+                   
+                }
+            );
+            });
+        // ]]></script>
+       <script>
+			jQuery(document).ready(function($) {
+				$('.js-currency').select2({
+					placeholder: "Enter your country...",
+                    width: 'resolve',
+                    dropdownParent: $(".currency-dropdown")
+				});
+			});
+        </script>
+         <div class="currency-popup" style="overflow:visible;">
+            <div class="main-currencies-wrap">
+                <h4>Check price in popular currencies below</h4>
+            
+            </div>
+            <h4>...or use dropdown below to find your currency</h4>
+                <div class="currency-dropdown">
+                    <select class="js-currency currencies" style="width: 290px"><option>Enter your country...</option></select>
+                </div>
+                <a class="special-ts ts-button-inline" href="https://deepenglish.com/checkout/?rid=pZG1Aa" target="_blank">Start Now</a>
+                <h2 class="your-for-just">Yours for just $99 USD</h2>
+                    <div class="charged-usd">We charge your credit card in US dollars.<br>The exchange rate that your bank uses may slightly vary from the rates above.</div>
+        </div>   
+</body>
+</html>

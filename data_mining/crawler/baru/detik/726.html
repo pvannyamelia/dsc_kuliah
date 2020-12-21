@@ -1,0 +1,2761 @@
+<html>
+<head>
+    <title>Detikid - Register</title>
+    
+        <meta name="robots" content="noindex, nofollow">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="/static/detikid/js/jquery-min.js"></script>
+    <script type="text/javascript" src="/static/detikid/js/dtkid-controller.min.js"></script>
+    <script type="text/javascript">
+        
+            var base_url = 'https://adsmart.detik.com/?utm_source=detiknews&amp;utm_medium=desktop';
+        
+
+    </script>
+    <link href="/static/detikid/css/detikid.css" rel="stylesheet" type="text/css">
+
+    <script src="/static/detikconnect/js/popup.js?1"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            
+
+                $('.close_box_in').click(function(event){
+                    parentURI = run.getParam('parentURI');
+                    event.preventDefault()
+                    if(parentURI == false){
+                        parent.location = base_url;
+                    }else{
+                        parent.location = parentURI+'#close';
+                    }
+                });
+
+            
+        });
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore
+    (j,f);})(window,document,'script','dataLayer','GTM-NG6BTJ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) →
+<noscript><iframe
+src="//www.googletagmanager.com/ns.html?id=GTM-NG6BTJ"height="0"width="0"
+style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--S:DETIK ID-->
+<div class="modal__bg"></div>
+<div class="dtkid">
+    
+         
+            <header class="dtkid__header dtkid__header--blue">
+        
+
+		<div class="dtkid__header__bg dtkid__header__bg--left"></div>
+		<div class="dtkid__header__logo">
+			<a href="#" class="sprite sprite-logo_detik"></a>
+			<a href="#" class="sprite sprite-logo_cnn"></a>
+			<a href="#" class="sprite sprite-logo_cnbc"></a>
+			<a href="#" class="sprite sprite-logo_haibunda"></a>
+			<div class="dtkid__header__logo__sprite">
+				<div class="dtkid__header__logo__sprite--relative">
+					<a href="#" class="clearfix">
+						<span class="dtkid__header__logo__sprite--first"></span>
+						<span class="dtkid__header__logo__sprite--two"></span>
+						<span class="dtkid__header__logo__sprite--three"></span>
+						<span class="dtkid__header__logo__sprite--four"></span>
+						<span class="dtkid__header__logo__sprite--five"></span>
+						<span class="dtkid__header__logo__sprite--six"></span>
+						<span class="dtkid__header__logo__sprite--seven"></span>
+						<span class="dtkid__header__logo__sprite--eight">
+							Satu Akun Untuk Semua Akses
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="dtkid__header__bg dtkid__header__bg--right"></div>
+            <a href="" class="close_box_in"><span class="icon icon-button_close icon-button_close-dims"></span></a>
+	</header>
+    
+<section class="dtkid__form text-center">
+
+<nav class="dtkid__form__nav">
+    <div class="clearfix">
+        <a href="#" class="active">
+            <p>Identity</p>
+            <span class="dtkid__form__nav__number">1</span>
+            <span class="dtkid__form__nav__separator"></span>
+        </a>
+        <a href="#" class="">
+            <p>Verification</p>
+            <span class="dtkid__form__nav__number">2</span>
+            <span class="dtkid__form__nav__separator"></span>
+        </a>
+        <a href="#" class="">
+            <p>Finish</p>
+            <span class="dtkid__form__nav__number">3</span>
+            <span class="dtkid__form__nav__separator"></span>
+        </a>
+    </div>
+</nav>
+
+
+<form onsubmit="preventDoubleSubmit()" action="/accounts/register?clientId=10172&amp;redirectUrl=https%3A%2F%2Fadsmart.detik.com%2Fcallback%2F&amp;ui=popup" id="form__login" method="post" class="clearfix">
+    
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="OuVctKfKnLcJFvndBnOeIlpMi7S9bWOTLm65qRfjiwT92YGc7kRMid3830TOdVU2">
+
+    <div class="dtkid__form__col">
+        <div class="dtkid__form__col__row">
+            <fieldset class="dtkid__form__fieldset">
+               <!-- <label for="">NAMA LENGKAP</label> -->
+                <div class="dtkid__form__fieldset__input--icon">
+                    <span class="icon icon-icon_user icon-icon_user-dims"></span>
+                    <input data-validation="required" data-validation-error-msg="Nama harus diisi" id="name" min_length="Gunakan nama minimal 5 karakter" name="name" placeholder="Name" type="text">
+                </div>
+            </fieldset>
+            <fieldset class="dtkid__form__fieldset">
+                <!--<label for="">EMAIL</label> -->
+                <div class="dtkid__form__fieldset__input--icon">
+                    <span class="icon icon-icon_mail_user icon-icon_mail_user-dims"></span>
+                    <input autocomplete="off" data-validation="email" data-validation-error-msg="Email belum diisi" id="email" name="email" placeholder="Email" type="email">
+                </div>
+            </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <fieldset class="dtkid__form__fieldset tooltip">
+                <div class="dtkid__form__fieldset__input--icon phone_number_input" style="font-size: 0;margin-bottom:-20px;">
+                    <select class="chosen-container chosen-container-single" id="phone_code" name="phone_code" style="width:110px;">
+<option value="1">+1</option>
+<option value="1-76">+1-76</option>
+<option value="20">+20</option>
+<option value="212">+212</option>
+<option value="213">+213</option>
+<option value="216">+216</option>
+<option value="218">+218</option>
+<option value="220">+220</option>
+<option value="221">+221</option>
+<option value="222">+222</option>
+<option value="223">+223</option>
+<option value="224">+224</option>
+<option value="225">+225</option>
+<option value="226">+226</option>
+<option value="227">+227</option>
+<option value="228">+228</option>
+<option value="229">+229</option>
+<option value="230">+230</option>
+<option value="231">+231</option>
+<option value="232">+232</option>
+<option value="233">+233</option>
+<option value="234">+234</option>
+<option value="235">+235</option>
+<option value="236">+236</option>
+<option value="237">+237</option>
+<option value="238">+238</option>
+<option value="239">+239</option>
+<option value="240">+240</option>
+<option value="241">+241</option>
+<option value="242">+242</option>
+<option value="243">+243</option>
+<option value="244">+244</option>
+<option value="245">+245</option>
+<option value="246">+246</option>
+<option value="248">+248</option>
+<option value="249">+249</option>
+<option value="250">+250</option>
+<option value="251">+251</option>
+<option value="252">+252</option>
+<option value="253">+253</option>
+<option value="254">+254</option>
+<option value="255">+255</option>
+<option value="256">+256</option>
+<option value="257">+257</option>
+<option value="258">+258</option>
+<option value="260">+260</option>
+<option value="261">+261</option>
+<option value="262">+262</option>
+<option value="263">+263</option>
+<option value="264">+264</option>
+<option value="265">+265</option>
+<option value="266">+266</option>
+<option value="267">+267</option>
+<option value="268">+268</option>
+<option value="269">+269</option>
+<option value="27">+27</option>
+<option value="290">+290</option>
+<option value="291">+291</option>
+<option value="297">+297</option>
+<option value="298">+298</option>
+<option value="299">+299</option>
+<option value="30">+30</option>
+<option value="31">+31</option>
+<option value="32">+32</option>
+<option value="33">+33</option>
+<option value="34">+34</option>
+<option value="350">+350</option>
+<option value="351">+351</option>
+<option value="352">+352</option>
+<option value="353">+353</option>
+<option value="354">+354</option>
+<option value="355">+355</option>
+<option value="356">+356</option>
+<option value="357">+357</option>
+<option value="358">+358</option>
+<option value="359">+359</option>
+<option value="36">+36</option>
+<option value="370">+370</option>
+<option value="371">+371</option>
+<option value="372">+372</option>
+<option value="373">+373</option>
+<option value="374">+374</option>
+<option value="375">+375</option>
+<option value="376">+376</option>
+<option value="377">+377</option>
+<option value="378">+378</option>
+<option value="379">+379</option>
+<option value="380">+380</option>
+<option value="381">+381</option>
+<option value="382">+382</option>
+<option value="385">+385</option>
+<option value="386">+386</option>
+<option value="387">+387</option>
+<option value="389">+389</option>
+<option value="39">+39</option>
+<option value="40">+40</option>
+<option value="41">+41</option>
+<option value="420">+420</option>
+<option value="421">+421</option>
+<option value="423">+423</option>
+<option value="43">+43</option>
+<option value="44">+44</option>
+<option value="45">+45</option>
+<option value="46">+46</option>
+<option value="47">+47</option>
+<option value="48">+48</option>
+<option value="49">+49</option>
+<option value="500">+500</option>
+<option value="501">+501</option>
+<option value="502">+502</option>
+<option value="503">+503</option>
+<option value="504">+504</option>
+<option value="505">+505</option>
+<option value="506">+506</option>
+<option value="507">+507</option>
+<option value="508">+508</option>
+<option value="509">+509</option>
+<option value="51">+51</option>
+<option value="52">+52</option>
+<option value="53">+53</option>
+<option value="54">+54</option>
+<option value="55">+55</option>
+<option value="56">+56</option>
+<option value="57">+57</option>
+<option value="58">+58</option>
+<option value="590">+590</option>
+<option value="591">+591</option>
+<option value="592">+592</option>
+<option value="593">+593</option>
+<option value="594">+594</option>
+<option value="595">+595</option>
+<option value="596">+596</option>
+<option value="597">+597</option>
+<option value="598">+598</option>
+<option value="60">+60</option>
+<option value="61">+61</option>
+<option value="62" selected>+62</option>
+<option value="63">+63</option>
+<option value="64">+64</option>
+<option value="65">+65</option>
+<option value="66">+66</option>
+<option value="670">+670</option>
+<option value="672">+672</option>
+<option value="673">+673</option>
+<option value="674">+674</option>
+<option value="675">+675</option>
+<option value="676">+676</option>
+<option value="677">+677</option>
+<option value="678">+678</option>
+<option value="679">+679</option>
+<option value="680">+680</option>
+<option value="681">+681</option>
+<option value="682">+682</option>
+<option value="683">+683</option>
+<option value="685">+685</option>
+<option value="686">+686</option>
+<option value="687">+687</option>
+<option value="688">+688</option>
+<option value="689">+689</option>
+<option value="690">+690</option>
+<option value="691">+691</option>
+<option value="692">+692</option>
+<option value="7">+7</option>
+<option value="81">+81</option>
+<option value="82">+82</option>
+<option value="84">+84</option>
+<option value="850">+850</option>
+<option value="852">+852</option>
+<option value="853">+853</option>
+<option value="855">+855</option>
+<option value="856">+856</option>
+<option value="86">+86</option>
+<option value="870">+870</option>
+<option value="880">+880</option>
+<option value="886">+886</option>
+<option value="90">+90</option>
+<option value="91">+91</option>
+<option value="92">+92</option>
+<option value="93">+93</option>
+<option value="94">+94</option>
+<option value="95">+95</option>
+<option value="960">+960</option>
+<option value="961">+961</option>
+<option value="962">+962</option>
+<option value="963">+963</option>
+<option value="964">+964</option>
+<option value="965">+965</option>
+<option value="966">+966</option>
+<option value="967">+967</option>
+<option value="968">+968</option>
+<option value="970">+970</option>
+<option value="971">+971</option>
+<option value="972">+972</option>
+<option value="973">+973</option>
+<option value="974">+974</option>
+<option value="975">+975</option>
+<option value="976">+976</option>
+<option value="977">+977</option>
+<option value="98">+98</option>
+<option value="992">+992</option>
+<option value="993">+993</option>
+<option value="994">+994</option>
+<option value="995">+995</option>
+<option value="996">+996</option>
+<option value="998">+998</option>
+</select>
+                    <input class="number_only" id="id_phone_number" maxlength="16" minlength="6" name="phone_number" placeholder="No. Telp" type="text">
+                       <span class="phone_tooltip" style="position: relative;
+    top: -38px;
+    right: -265px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;"><img src="/static/detikconnect/images/icon_question.svg" alt="">
+                        <p>Dengan mengisi nomor telepon, kami akan mudah menghubungi untuk informasi terupdate dari detikcom</p>
+                    </span>
+                    <span class="icon icon-icon_smartphone icon-icon_smartphone-dims">
+                </span></div>
+            </fieldset>
+            <fieldset class="dtkid__form__fieldset">
+                <!--<label for="">PASSWORD</label>-->
+                <div class="dtkid__form__fieldset__input--icon password-group">
+                    <span class="icon icon-icon_lock icon-icon_lock-dims"></span>
+                    <input autocomplete="off" class="password-box" data-validation="required" data-validation-error-msg="Password belum diisi" id="password" name="password" placeholder="Password" type="password">
+                    <a href="#!" class="password-visibility">
+                        <i class="icon icon-icon_password icon-icon_password-dims"></i></a>
+                </div>
+            </fieldset>
+        </div>
+        <div class="dtkid__form__col__row">
+            
+                
+                    <fieldset class="dtkid__form__fieldset">
+                
+                    <!--<label for="">JENIS KELAMIN</label> -->
+                    <div class="dtkid__form__fieldset__radio clearfix mt10 mb20">
+                        <div class="dtkid__form__fieldset__radio__item">
+                             <span class="iconsex iconsex-male"></span>
+                            
+                            <input type="radio" name="sex" value="male" id="pria">
+                            
+
+                            <label for="pria">Pria</label>
+                        </div>
+                        <div class="dtkid__form__fieldset__radio__item">
+                            <span class="iconsex iconsex-female"></span>
+                            <input type="radio" name="sex" value="female" id="wanita">
+                            <label for="wanita">Wanita</label>
+                        </div>
+                    </div>
+                </fieldset>
+            
+        <!--
+            <fieldset class="dtkid__form__fieldset">
+                <label for="">NEGARA</label>
+                <div class="dtkid__form__fieldset__input--icon">
+                    <span class="icon icon-icon_negara icon-icon_negara-dims"></span>
+                    <select class="choice__chosen" id="country" name="country">
+<option value="AF">Afghanistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua dan Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahama</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="NL">Belanda</option>
+<option value="BY">Belarusia</option>
+<option value="BE">Belgia</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BA">Bosnia dan Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BR">Brazil</option>
+<option value="IO">British India</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CG">Congo</option>
+<option value="CR">Costa Rica</option>
+<option value="CU">Cuba</option>
+<option value="CY">Cyprus</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="EC">Ekuador</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FJ">Fiji</option>
+<option value="PH">Filipina</option>
+<option value="FI">Finlandia</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-bissau</option>
+<option value="GY">Guyana</option>
+<option value="GF">Guyana Perancis</option>
+<option value="HT">Haiti</option>
+<option value="VA">Holy See (Kota Vatican)</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungaria</option>
+<option value="IN">India</option>
+<option value="ID" selected="selected">Indonesia</option>
+<option value="IQ">Irak</option>
+<option value="IR">Iran</option>
+<option value="IE">Irlandia</option>
+<option value="IS">Islandia</option>
+<option value="IM">Isle of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italia</option>
+<option value="JM">Jamaika</option>
+<option value="JP">Jepang</option>
+<option value="DE">Jerman</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="NC">Kaledonia Baru</option>
+<option value="KH">Kamboja</option>
+<option value="CM">Kamerun</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KY">Kepulauan Cayman</option>
+<option value="CK">Kepulauan Cook</option>
+<option value="FO">Kepulauan Faroe</option>
+<option value="KI">Kiribati</option>
+<option value="CO">Kolombia</option>
+<option value="KM">Komoro</option>
+<option value="KR">Korea Selatan</option>
+<option value="KP">Korea Utara</option>
+<option value="HR">Kroasia</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Lao People&#39;s Demokrat Republik</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libyan Arab Jamahiriya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia, Republik</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MA">Maroko</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="EG">Mesir</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia</option>
+<option value="MD">Moldova, Republik</option>
+<option value="MC">Monako</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NO">Norwegia</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestina</option>
+<option value="PA">Panama</option>
+<option value="CI">Pantai Gading</option>
+<option value="PG">Papua Nugini</option>
+<option value="PY">Paraguay</option>
+<option value="FR">Perancis</option>
+<option value="TF">Perancis Wilayah Selatan</option>
+<option value="PE">Peru</option>
+<option value="PN">Pitcairn</option>
+<option value="PL">Polandia</option>
+<option value="PF">Polinesia Perancis</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="CX">Pulau Christmas</option>
+<option value="CC">Pulau Cocos (Keeling)</option>
+<option value="FK">Pulau Falkland(Malvinas)</option>
+<option value="HM">Pulau Heard and Pulau McDonald </option>
+<option value="MP">Pulau Mariana</option>
+<option value="MH">Pulau Marshall</option>
+<option value="NF">Pulau Norfolk</option>
+<option value="QA">Qatar</option>
+<option value="CF">Republik African</option>
+<option value="CZ">Republik Ceko</option>
+<option value="CD">Republik Congo</option>
+<option value="DO">Republik Dominican</option>
+<option value="RO">Romania</option>
+<option value="RU">Russian</option>
+<option value="RW">Rwanda</option>
+<option value="SH">Saint Helena Dan Tristan Da Cunha</option>
+<option value="KN">Saint Kitts Dan Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre and Miquelon</option>
+<option value="VC">Saint Vincent and the Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome and Principe</option>
+<option value="SA">Saudi Arabia</option>
+<option value="NZ">Selandia Baru</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia and the South Sandwich Islands</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SD">Sudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard and Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syrian Arab Republic</option>
+<option value="TW">Taiwan, Province of China</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania, United Republic of</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="US">United States of America</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Vietnam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="VI">Virgin Islands, U.S.</option>
+<option value="WF">Wallis and Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="GR">Yunani</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+                </div>
+            </fieldset>
+            <fieldset class="dtkid__form__fieldset">
+                <label for="">KOTA DOMISILI</label>
+                <div class="dtkid__form__fieldset__input--icon">
+                    <span class="icon icon-icon_building icon-icon_building-dims"></span>
+                    <select id="city" name="city">
+                        <option value="0">
+                            -- Pilih Kota --
+                        </option>
+                        
+                            <option value="42499">
+                            Abepura
+                            </option>
+                        
+                            <option value="473">
+                            Aceh Barat
+                            </option>
+                        
+                            <option value="159">
+                            Aceh Barat Daya
+                            </option>
+                        
+                            <option value="160">
+                            Aceh Besar
+                            </option>
+                        
+                            <option value="161">
+                            Aceh Jaya
+                            </option>
+                        
+                            <option value="162">
+                            Aceh Selatan
+                            </option>
+                        
+                            <option value="163">
+                            Aceh Singkil
+                            </option>
+                        
+                            <option value="164">
+                            Aceh Tamiang
+                            </option>
+                        
+                            <option value="165">
+                            Aceh Tengah
+                            </option>
+                        
+                            <option value="166">
+                            Aceh Tenggara
+                            </option>
+                        
+                            <option value="167">
+                            Aceh Timur
+                            </option>
+                        
+                            <option value="168">
+                            Aceh Utara
+                            </option>
+                        
+                            <option value="211">
+                            Agam
+                            </option>
+                        
+                            <option value="429">
+                            Alor
+                            </option>
+                        
+                            <option value="15">
+                            Ambon
+                            </option>
+                        
+                            <option value="87">
+                            Amlapura
+                            </option>
+                        
+                            <option value="181">
+                            Asahan
+                            </option>
+                        
+                            <option value="42782">
+                            Asmat
+                            </option>
+                        
+                            <option value="416">
+                            Badung
+                            </option>
+                        
+                            <option value="42858">
+                            Balangan
+                            </option>
+                        
+                            <option value="18">
+                            Balikpapan
+                            </option>
+                        
+                            <option value="19">
+                            Banda Aceh
+                            </option>
+                        
+                            <option value="22">
+                            Bandar Lampung
+                            </option>
+                        
+                            <option value="6">
+                            Bandung
+                            </option>
+                        
+                            <option value="42755">
+                            Bandung Barat
+                            </option>
+                        
+                            <option value="42871">
+                            Banggai
+                            </option>
+                        
+                            <option value="42872">
+                            Banggai Kepulauan
+                            </option>
+                        
+                            <option value="42873">
+                            Banggai Laut
+                            </option>
+                        
+                            <option value="277">
+                            Bangka
+                            </option>
+                        
+                            <option value="278">
+                            Bangka Barat
+                            </option>
+                        
+                            <option value="368">
+                            Bangkalan
+                            </option>
+                        
+                            <option value="279">
+                            Bangka Selatan
+                            </option>
+                        
+                            <option value="280">
+                            Bangka Tengah
+                            </option>
+                        
+                            <option value="417">
+                            Bangli
+                            </option>
+                        
+                            <option value="99">
+                            Banjar
+                            </option>
+                        
+                            <option value="42859">
+                            Banjar
+                            </option>
+                        
+                            <option value="116">
+                            Banjarbaru
+                            </option>
+                        
+                            <option value="16">
+                            Banjarmasin
+                            </option>
+                        
+                            <option value="332">
+                            Banjarnegara
+                            </option>
+                        
+                            <option value="42760">
+                            Banteang
+                            </option>
+                        
+                            <option value="411">
+                            Bantul
+                            </option>
+                        
+                            <option value="265">
+                            Banyuasin
+                            </option>
+                        
+                            <option value="334">
+                            Banyumas
+                            </option>
+                        
+                            <option value="369">
+                            Banyuwangi
+                            </option>
+                        
+                            <option value="42860">
+                            Barito Kuala
+                            </option>
+                        
+                            <option value="42883">
+                            Barito Selatan
+                            </option>
+                        
+                            <option value="42884">
+                            Barito Timur
+                            </option>
+                        
+                            <option value="42885">
+                            Barito Utara
+                            </option>
+                        
+                            <option value="42761">
+                            Barru
+                            </option>
+                        
+                            <option value="62">
+                            Batam
+                            </option>
+                        
+                            <option value="335">
+                            Batang
+                            </option>
+                        
+                            <option value="245">
+                            Batanghari
+                            </option>
+                        
+                            <option value="402">
+                            Batu
+                            </option>
+                        
+                            <option value="182">
+                            Batubara
+                            </option>
+                        
+                            <option value="42824">
+                            Baturaja
+                            </option>
+                        
+                            <option value="137">
+                            Bau-Bau
+                            </option>
+                        
+                            <option value="5">
+                            Bekasi
+                            </option>
+                        
+                            <option value="281">
+                            Belitung
+                            </option>
+                        
+                            <option value="282">
+                            Belitung Timur
+                            </option>
+                        
+                            <option value="42904">
+                            Belu
+                            </option>
+                        
+                            <option value="169">
+                            Bener Meriah
+                            </option>
+                        
+                            <option value="227">
+                            Bengkalis
+                            </option>
+                        
+                            <option value="42817">
+                            Bengkayang
+                            </option>
+                        
+                            <option value="42869">
+                            Bengkulu
+                            </option>
+                        
+                            <option value="256">
+                            Bengkulu Selatan
+                            </option>
+                        
+                            <option value="42870">
+                            Bengkulu Tengah
+                            </option>
+                        
+                            <option value="257">
+                            Bengkulu Utara
+                            </option>
+                        
+                            <option value="42810">
+                            Berau
+                            </option>
+                        
+                            <option value="127">
+                            Bima
+                            </option>
+                        
+                            <option value="151">
+                            Binjai
+                            </option>
+                        
+                            <option value="170">
+                            Bireuen
+                            </option>
+                        
+                            <option value="139">
+                            Bitung
+                            </option>
+                        
+                            <option value="42783">
+                            Blak Numfor
+                            </option>
+                        
+                            <option value="112">
+                            Blitar
+                            </option>
+                        
+                            <option value="336">
+                            Blora
+                            </option>
+                        
+                            <option value="42503">
+                            Boalemo
+                            </option>
+                        
+                            <option value="2">
+                            Bogor
+                            </option>
+                        
+                            <option value="371">
+                            Bojonegoro
+                            </option>
+                        
+                            <option value="42847">
+                            Bolaang Mangondow
+                            </option>
+                        
+                            <option value="42848">
+                            Bolaang Mangondow Selatan
+                            </option>
+                        
+                            <option value="42849">
+                            Bolaang Mangondow Timur
+                            </option>
+                        
+                            <option value="42850">
+                            Bolaang Mangondow Utara
+                            </option>
+                        
+                            <option value="42935">
+                            Bombana
+                            </option>
+                        
+                            <option value="373">
+                            Bondowoso
+                            </option>
+                        
+                            <option value="42762">
+                            Bone
+                            </option>
+                        
+                            <option value="42504">
+                            Bone Bolango
+                            </option>
+                        
+                            <option value="118">
+                            Bontang
+                            </option>
+                        
+                            <option value="42784">
+                            Boven Digoel
+                            </option>
+                        
+                            <option value="337">
+                            Boyolali
+                            </option>
+                        
+                            <option value="338">
+                            Brebes
+                            </option>
+                        
+                            <option value="142">
+                            Bukittinggi
+                            </option>
+                        
+                            <option value="418">
+                            Buleleng
+                            </option>
+                        
+                            <option value="42763">
+                            Bulukumba
+                            </option>
+                        
+                            <option value="42944">
+                            Bulungan
+                            </option>
+                        
+                            <option value="246">
+                            Bungo
+                            </option>
+                        
+                            <option value="42874">
+                            Buol
+                            </option>
+                        
+                            <option value="42840">
+                            Buru
+                            </option>
+                        
+                            <option value="42936">
+                            Buton &amp; Buton Utara
+                            </option>
+                        
+                            <option value="305">
+                            Ciamis
+                            </option>
+                        
+                            <option value="307">
+                            Cianjur
+                            </option>
+                        
+                            <option value="339">
+                            Cilacap
+                            </option>
+                        
+                            <option value="83">
+                            Cilegon
+                            </option>
+                        
+                            <option value="95">
+                            Cimahi
+                            </option>
+                        
+                            <option value="96">
+                            Cirebon
+                            </option>
+                        
+                            <option value="184">
+                            Dairi
+                            </option>
+                        
+                            <option value="42785">
+                            Deiyai
+                            </option>
+                        
+                            <option value="185">
+                            Deli Serdang
+                            </option>
+                        
+                            <option value="340">
+                            Demak
+                            </option>
+                        
+                            <option value="11">
+                            Denpasar
+                            </option>
+                        
+                            <option value="42758">
+                            Denpasar Utara
+                            </option>
+                        
+                            <option value="3">
+                            Depok
+                            </option>
+                        
+                            <option value="42498">
+                            Dharmasraya
+                            </option>
+                        
+                            <option value="42786">
+                            Dogiyai
+                            </option>
+                        
+                            <option value="422">
+                            Dompu
+                            </option>
+                        
+                            <option value="42875">
+                            Donggala
+                            </option>
+                        
+                            <option value="131">
+                            Dumai
+                            </option>
+                        
+                            <option value="42825">
+                            Empat Lawang
+                            </option>
+                        
+                            <option value="431">
+                            Ende
+                            </option>
+                        
+                            <option value="42764">
+                            Enrekang
+                            </option>
+                        
+                            <option value="42920">
+                            Fak-fak
+                            </option>
+                        
+                            <option value="432">
+                            Flores
+                            </option>
+                        
+                            <option value="309">
+                            Garut
+                            </option>
+                        
+                            <option value="171">
+                            Gayo Lues
+                            </option>
+                        
+                            <option value="89">
+                            Gianyar
+                            </option>
+                        
+                            <option value="42505">
+                            Gorontalo Utara
+                            </option>
+                        
+                            <option value="42765">
+                            Gowa
+                            </option>
+                        
+                            <option value="374">
+                            Gresik
+                            </option>
+                        
+                            <option value="341">
+                            Grobogan
+                            </option>
+                        
+                            <option value="412">
+                            Gunung Kidul
+                            </option>
+                        
+                            <option value="42886">
+                            Gunung Mas
+                            </option>
+                        
+                            <option value="201">
+                            Gunung Sitoli
+                            </option>
+                        
+                            <option value="42896">
+                            Halmahera Barat
+                            </option>
+                        
+                            <option value="42897">
+                            Halmahera Selatan
+                            </option>
+                        
+                            <option value="42898">
+                            Halmahera Tengah
+                            </option>
+                        
+                            <option value="42899">
+                            Halmahera Timur
+                            </option>
+                        
+                            <option value="42900">
+                            Halmahera Utara
+                            </option>
+                        
+                            <option value="42861">
+                            Hulu Sungai Selatan
+                            </option>
+                        
+                            <option value="42862">
+                            Hulu Sungai Tengah
+                            </option>
+                        
+                            <option value="42863">
+                            Hulu Sungai Utara
+                            </option>
+                        
+                            <option value="42833">
+                            Humbang Hasudutan
+                            </option>
+                        
+                            <option value="228">
+                            Indragiri Hilir
+                            </option>
+                        
+                            <option value="229">
+                            Indragiri Hulu
+                            </option>
+                        
+                            <option value="310">
+                            Indramayu
+                            </option>
+                        
+                            <option value="42787">
+                            Intan Jaya
+                            </option>
+                        
+                            <option value="46">
+                            Jakarta Barat
+                            </option>
+                        
+                            <option value="45">
+                            Jakarta Pusat
+                            </option>
+                        
+                            <option value="41">
+                            Jakarta Selatan
+                            </option>
+                        
+                            <option value="44">
+                            Jakarta Timur
+                            </option>
+                        
+                            <option value="42">
+                            Jakarta Utara
+                            </option>
+                        
+                            <option value="42754">
+                            Jambi
+                            </option>
+                        
+                            <option value="14">
+                            Jayapura
+                            </option>
+                        
+                            <option value="42788">
+                            Jayawijaya
+                            </option>
+                        
+                            <option value="375">
+                            Jember
+                            </option>
+                        
+                            <option value="42759">
+                            Jembrana
+                            </option>
+                        
+                            <option value="42766">
+                            Jeneponto
+                            </option>
+                        
+                            <option value="342">
+                            Jepara
+                            </option>
+                        
+                            <option value="376">
+                            Jombang
+                            </option>
+                        
+                            <option value="88">
+                            Kabupaten Badung
+                            </option>
+                        
+                            <option value="463">
+                            Kabupaten Bintan
+                            </option>
+                        
+                            <option value="42508">
+                            Kabupaten Gorontalo
+                            </option>
+                        
+                            <option value="465">
+                            Kabupaten Karimun
+                            </option>
+                        
+                            <option value="467">
+                            Kabupaten Kepulauan Anambas
+                            </option>
+                        
+                            <option value="90">
+                            Kabupaten Lebong
+                            </option>
+                        
+                            <option value="469">
+                            Kabupaten Lingga
+                            </option>
+                        
+                            <option value="470">
+                            Kabupaten Natuna
+                            </option>
+                        
+                            <option value="42921">
+                            Kaimana
+                            </option>
+                        
+                            <option value="230">
+                            Kampar
+                            </option>
+                        
+                            <option value="42887">
+                            Kapuas
+                            </option>
+                        
+                            <option value="42818">
+                            Kapuas Hulu
+                            </option>
+                        
+                            <option value="343">
+                            Karanganyar
+                            </option>
+                        
+                            <option value="420">
+                            Karangasem
+                            </option>
+                        
+                            <option value="311">
+                            Karawang
+                            </option>
+                        
+                            <option value="186">
+                            Karo
+                            </option>
+                        
+                            <option value="42888">
+                            Katingan
+                            </option>
+                        
+                            <option value="258">
+                            Kaur Tengah
+                            </option>
+                        
+                            <option value="42819">
+                            Kayong Utara
+                            </option>
+                        
+                            <option value="344">
+                            Kebumen
+                            </option>
+                        
+                            <option value="111">
+                            Kediri
+                            </option>
+                        
+                            <option value="42789">
+                            Keerom
+                            </option>
+                        
+                            <option value="345">
+                            Kendal
+                            </option>
+                        
+                            <option value="138">
+                            Kendari
+                            </option>
+                        
+                            <option value="259">
+                            Kepahiang
+                            </option>
+                        
+                            <option value="42841">
+                            Kepulauan Aru
+                            </option>
+                        
+                            <option value="212">
+                            Kepulauan Mentawai
+                            </option>
+                        
+                            <option value="42757">
+                            Kepulauan Meranti
+                            </option>
+                        
+                            <option value="42851">
+                            Kepulauan Sangihe
+                            </option>
+                        
+                            <option value="42767">
+                            Kepulauan Selayar
+                            </option>
+                        
+                            <option value="326">
+                            Kepulauan Seribu
+                            </option>
+                        
+                            <option value="42852">
+                            Kepulauan Siau Tagulandang Biaro
+                            </option>
+                        
+                            <option value="42853">
+                            Kepulauan Talaud
+                            </option>
+                        
+                            <option value="42790">
+                            Kepulauan Yapen
+                            </option>
+                        
+                            <option value="247">
+                            Kerinci
+                            </option>
+                        
+                            <option value="435">
+                            Ketapang
+                            </option>
+                        
+                            <option value="346">
+                            Klaten
+                            </option>
+                        
+                            <option value="42500">
+                            Klungkung
+                            </option>
+                        
+                            <option value="42937">
+                            Kolaka
+                            </option>
+                        
+                            <option value="42938">
+                            Kolaka Timur
+                            </option>
+                        
+                            <option value="42939">
+                            Kolaka Utara
+                            </option>
+                        
+                            <option value="42940">
+                            Konawe
+                            </option>
+                        
+                            <option value="42941">
+                            Konawe Utara / Selatan
+                            </option>
+                        
+                            <option value="42864">
+                            Kota Baru
+                            </option>
+                        
+                            <option value="42509">
+                            Kota Gorontalo
+                            </option>
+                        
+                            <option value="140">
+                            Kotamobagu
+                            </option>
+                        
+                            <option value="42889">
+                            Kotawaringin Barat
+                            </option>
+                        
+                            <option value="42890">
+                            Kotawaringin Timur
+                            </option>
+                        
+                            <option value="157">
+                            Kota Yogyakarta
+                            </option>
+                        
+                            <option value="231">
+                            Kuantan Singingi
+                            </option>
+                        
+                            <option value="42820">
+                            Kubu Raya
+                            </option>
+                        
+                            <option value="347">
+                            Kudus
+                            </option>
+                        
+                            <option value="413">
+                            Kulon Progo
+                            </option>
+                        
+                            <option value="312">
+                            Kuningan
+                            </option>
+                        
+                            <option value="129">
+                            Kupang
+                            </option>
+                        
+                            <option value="42901">
+                            Kupulauan Sula
+                            </option>
+                        
+                            <option value="81">
+                            Kuta
+                            </option>
+                        
+                            <option value="42811">
+                            Kutai Barat
+                            </option>
+                        
+                            <option value="42812">
+                            Kutai Kartenegara
+                            </option>
+                        
+                            <option value="42813">
+                            Kutai Timur
+                            </option>
+                        
+                            <option value="187">
+                            Labuhan Batu
+                            </option>
+                        
+                            <option value="188">
+                            Labuhanbatu Selatan
+                            </option>
+                        
+                            <option value="189">
+                            Labuhanbatu Utara
+                            </option>
+                        
+                            <option value="266">
+                            Lahat
+                            </option>
+                        
+                            <option value="42891">
+                            Lamandau
+                            </option>
+                        
+                            <option value="378">
+                            Lamongan
+                            </option>
+                        
+                            <option value="285">
+                            Lampung Barat
+                            </option>
+                        
+                            <option value="286">
+                            Lampung Selatan
+                            </option>
+                        
+                            <option value="287">
+                            Lampung Tengah
+                            </option>
+                        
+                            <option value="288">
+                            Lampung Timur
+                            </option>
+                        
+                            <option value="289">
+                            Lampung Utara
+                            </option>
+                        
+                            <option value="42821">
+                            Landak
+                            </option>
+                        
+                            <option value="190">
+                            Langkat
+                            </option>
+                        
+                            <option value="77">
+                            Langsa
+                            </option>
+                        
+                            <option value="42791">
+                            Lanny Jaya
+                            </option>
+                        
+                            <option value="298">
+                            Lebak
+                            </option>
+                        
+                            <option value="260">
+                            Lebong Tengah
+                            </option>
+                        
+                            <option value="42905">
+                            Lembata
+                            </option>
+                        
+                            <option value="78">
+                            Lhokseumawe
+                            </option>
+                        
+                            <option value="213">
+                            Lima Puluh Kota
+                            </option>
+                        
+                            <option value="423">
+                            Lombok Barat
+                            </option>
+                        
+                            <option value="424">
+                            Lombok Tengah
+                            </option>
+                        
+                            <option value="425">
+                            Lombok Timur
+                            </option>
+                        
+                            <option value="426">
+                            Lombok Utara
+                            </option>
+                        
+                            <option value="148">
+                            Lubuklinggau
+                            </option>
+                        
+                            <option value="379">
+                            Lumajang
+                            </option>
+                        
+                            <option value="42768">
+                            Luwu
+                            </option>
+                        
+                            <option value="42769">
+                            Luwu Timur
+                            </option>
+                        
+                            <option value="42770">
+                            Luwu Utara
+                            </option>
+                        
+                            <option value="113">
+                            Madiun
+                            </option>
+                        
+                            <option value="100">
+                            Magelang
+                            </option>
+                        
+                            <option value="382">
+                            Magetan
+                            </option>
+                        
+                            <option value="42814">
+                            Mahakam Ulu
+                            </option>
+                        
+                            <option value="313">
+                            Majalengka
+                            </option>
+                        
+                            <option value="134">
+                            Majene
+                            </option>
+                        
+                            <option value="13">
+                            Makassar
+                            </option>
+                        
+                            <option value="42906">
+                            Malaka
+                            </option>
+                        
+                            <option value="50">
+                            Malang
+                            </option>
+                        
+                            <option value="42945">
+                            Malinau
+                            </option>
+                        
+                            <option value="42842">
+                            Maluku Tengah
+                            </option>
+                        
+                            <option value="42843">
+                            Maluku Tenggara
+                            </option>
+                        
+                            <option value="42844">
+                            Maluku Tenggara Barat
+                            </option>
+                        
+                            <option value="42931">
+                            Mamasa
+                            </option>
+                        
+                            <option value="42792">
+                            Mamberamo Raya
+                            </option>
+                        
+                            <option value="42793">
+                            Mamberamo Tengah
+                            </option>
+                        
+                            <option value="133">
+                            Mamuju
+                            </option>
+                        
+                            <option value="42932">
+                            Mamuju Tengah
+                            </option>
+                        
+                            <option value="42933">
+                            Mamuju Utara
+                            </option>
+                        
+                            <option value="56">
+                            Manado
+                            </option>
+                        
+                            <option value="191">
+                            Mandailing Natal
+                            </option>
+                        
+                            <option value="434">
+                            Manggarai
+                            </option>
+                        
+                            <option value="42907">
+                            Manggarai Barat
+                            </option>
+                        
+                            <option value="42908">
+                            Manggarai Timur
+                            </option>
+                        
+                            <option value="42922">
+                            Manokwari
+                            </option>
+                        
+                            <option value="42923">
+                            Manowari Selatan
+                            </option>
+                        
+                            <option value="42794">
+                            Mappi
+                            </option>
+                        
+                            <option value="42771">
+                            Maros
+                            </option>
+                        
+                            <option value="128">
+                            Mataram
+                            </option>
+                        
+                            <option value="42924">
+                            Maybrat
+                            </option>
+                        
+                            <option value="52">
+                            Medan
+                            </option>
+                        
+                            <option value="436">
+                            Melawi
+                            </option>
+                        
+                            <option value="42822">
+                            Mempawah
+                            </option>
+                        
+                            <option value="248">
+                            Merangin
+                            </option>
+                        
+                            <option value="42795">
+                            Merauke
+                            </option>
+                        
+                            <option value="290">
+                            Mesuji
+                            </option>
+                        
+                            <option value="123">
+                            Metro
+                            </option>
+                        
+                            <option value="42796">
+                            Mimika
+                            </option>
+                        
+                            <option value="42854">
+                            Minahasa
+                            </option>
+                        
+                            <option value="42855">
+                            Minahasa Selatan
+                            </option>
+                        
+                            <option value="42856">
+                            Minahasa Tenggara
+                            </option>
+                        
+                            <option value="42857">
+                            Minahasa Utara
+                            </option>
+                        
+                            <option value="109">
+                            Mojokerto
+                            </option>
+                        
+                            <option value="42876">
+                            Morowali
+                            </option>
+                        
+                            <option value="42877">
+                            Morowali Utara
+                            </option>
+                        
+                            <option value="267">
+                            Muara Enim
+                            </option>
+                        
+                            <option value="249">
+                            Muaro Jambi
+                            </option>
+                        
+                            <option value="261">
+                            Muko Muko
+                            </option>
+                        
+                            <option value="42942">
+                            Muna
+                            </option>
+                        
+                            <option value="42892">
+                            Murung Raya
+                            </option>
+                        
+                            <option value="268">
+                            Musi Banyuasin
+                            </option>
+                        
+                            <option value="269">
+                            Musi Rawas
+                            </option>
+                        
+                            <option value="42797">
+                            Nabire
+                            </option>
+                        
+                            <option value="172">
+                            Nagan Raya
+                            </option>
+                        
+                            <option value="42909">
+                            Nagekeo
+                            </option>
+                        
+                            <option value="42798">
+                            Nduga
+                            </option>
+                        
+                            <option value="449">
+                            Negara
+                            </option>
+                        
+                            <option value="42910">
+                            Ngada
+                            </option>
+                        
+                            <option value="386">
+                            Nganjuk
+                            </option>
+                        
+                            <option value="387">
+                            Ngawi
+                            </option>
+                        
+                            <option value="192">
+                            Nias
+                            </option>
+                        
+                            <option value="42834">
+                            Nias Barat
+                            </option>
+                        
+                            <option value="193">
+                            Nias Selatan
+                            </option>
+                        
+                            <option value="42835">
+                            Nias Utara
+                            </option>
+                        
+                            <option value="42946">
+                            Nunukan
+                            </option>
+                        
+                            <option value="82">
+                            Nusa Dua
+                            </option>
+                        
+                            <option value="270">
+                            Ogan Komering Ilir
+                            </option>
+                        
+                            <option value="271">
+                            Ogan Komering Ulu
+                            </option>
+                        
+                            <option value="42826">
+                            Ogan Komering Ulu Selatan
+                            </option>
+                        
+                            <option value="42827">
+                            Ogan Komering Ulu Timur
+                            </option>
+                        
+                            <option value="388">
+                            Pacitan
+                            </option>
+                        
+                            <option value="24">
+                            Padang
+                            </option>
+                        
+                            <option value="42836">
+                            Padang Lawas
+                            </option>
+                        
+                            <option value="42837">
+                            Padang Lawas Utara
+                            </option>
+                        
+                            <option value="223">
+                            Padang Panjang
+                            </option>
+                        
+                            <option value="215">
+                            Padang Pariaman
+                            </option>
+                        
+                            <option value="152">
+                            Padang Sidempuan
+                            </option>
+                        
+                            <option value="273">
+                            Pagar Alam
+                            </option>
+                        
+                            <option value="42838">
+                            Pakpak Barat
+                            </option>
+                        
+                            <option value="117">
+                            Palangkaraya
+                            </option>
+                        
+                            <option value="23">
+                            Palembang
+                            </option>
+                        
+                            <option value="135">
+                            Palopo
+                            </option>
+                        
+                            <option value="64">
+                            Palu
+                            </option>
+                        
+                            <option value="389">
+                            Pamekasan
+                            </option>
+                        
+                            <option value="300">
+                            Pandeglang
+                            </option>
+                        
+                            <option value="314">
+                            Pangandaran
+                            </option>
+                        
+                            <option value="42772">
+                            Pangkajene Kepulauan
+                            </option>
+                        
+                            <option value="120">
+                            Pangkal Pinang
+                            </option>
+                        
+                            <option value="42799">
+                            Paniai
+                            </option>
+                        
+                            <option value="136">
+                            Parepare
+                            </option>
+                        
+                            <option value="144">
+                            Pariaman
+                            </option>
+                        
+                            <option value="42878">
+                            Parigi Moutong
+                            </option>
+                        
+                            <option value="216">
+                            Pasaman
+                            </option>
+                        
+                            <option value="42756">
+                            Pasaman Barat
+                            </option>
+                        
+                            <option value="42815">
+                            Paser
+                            </option>
+                        
+                            <option value="110">
+                            Pasuruan
+                            </option>
+                        
+                            <option value="349">
+                            Pati
+                            </option>
+                        
+                            <option value="145">
+                            Payakumbuh
+                            </option>
+                        
+                            <option value="42925">
+                            Pegunungan Arfak
+                            </option>
+                        
+                            <option value="42800">
+                            Pegunungan Bintang
+                            </option>
+                        
+                            <option value="101">
+                            Pekalongan
+                            </option>
+                        
+                            <option value="20">
+                            Pekanbaru
+                            </option>
+                        
+                            <option value="232">
+                            Pelalawan
+                            </option>
+                        
+                            <option value="351">
+                            Pemalang
+                            </option>
+                        
+                            <option value="204">
+                            Pematang Siantar
+                            </option>
+                        
+                            <option value="42816">
+                            Penajam Paser Utara
+                            </option>
+                        
+                            <option value="276">
+                            Penukal Abab
+                            </option>
+                        
+                            <option value="42828">
+                            Penukal Abab Lematang Ilir
+                            </option>
+                        
+                            <option value="42829">
+                            Pesawaran
+                            </option>
+                        
+                            <option value="42830">
+                            Pesisir Barat
+                            </option>
+                        
+                            <option value="217">
+                            Pesisir Selatan
+                            </option>
+                        
+                            <option value="173">
+                            Pidie
+                            </option>
+                        
+                            <option value="174">
+                            Pidie Jaya
+                            </option>
+                        
+                            <option value="42773">
+                            Pinrang
+                            </option>
+                        
+                            <option value="42506">
+                            Pohuwato
+                            </option>
+                        
+                            <option value="42934">
+                            Polewali Mandar
+                            </option>
+                        
+                            <option value="391">
+                            Ponorogo
+                            </option>
+                        
+                            <option value="58">
+                            Pontianak
+                            </option>
+                        
+                            <option value="42879">
+                            Poso
+                            </option>
+                        
+                            <option value="150">
+                            Prabumulih
+                            </option>
+                        
+                            <option value="42831">
+                            Pringsewu
+                            </option>
+                        
+                            <option value="114">
+                            Probolinggo
+                            </option>
+                        
+                            <option value="42902">
+                            Pulau Morotai
+                            </option>
+                        
+                            <option value="42893">
+                            Pulau Pisau
+                            </option>
+                        
+                            <option value="42801">
+                            Puncak
+                            </option>
+                        
+                            <option value="42802">
+                            Puncak Jaya
+                            </option>
+                        
+                            <option value="352">
+                            Purbalingga
+                            </option>
+                        
+                            <option value="315">
+                            Purwakarta
+                            </option>
+                        
+                            <option value="102">
+                            Purwokerto
+                            </option>
+                        
+                            <option value="353">
+                            Purworejo
+                            </option>
+                        
+                            <option value="42926">
+                            Raja Ampat
+                            </option>
+                        
+                            <option value="262">
+                            Rejang Lebong
+                            </option>
+                        
+                            <option value="354">
+                            Rembang
+                            </option>
+                        
+                            <option value="233">
+                            Rokan Hilir
+                            </option>
+                        
+                            <option value="234">
+                            Rokan Hulu
+                            </option>
+                        
+                            <option value="42911">
+                            Rote Ndao
+                            </option>
+                        
+                            <option value="179">
+                            Sabang
+                            </option>
+                        
+                            <option value="42912">
+                            Sabu Raijua
+                            </option>
+                        
+                            <option value="103">
+                            Salatiga
+                            </option>
+                        
+                            <option value="17">
+                            Samarinda
+                            </option>
+                        
+                            <option value="438">
+                            Sambas
+                            </option>
+                        
+                            <option value="194">
+                            Samosir
+                            </option>
+                        
+                            <option value="393">
+                            Sampang
+                            </option>
+                        
+                            <option value="42823">
+                            Sanggau
+                            </option>
+                        
+                            <option value="42803">
+                            Sarmi
+                            </option>
+                        
+                            <option value="250">
+                            Sarolangun
+                            </option>
+                        
+                            <option value="146">
+                            Sawahlunto
+                            </option>
+                        
+                            <option value="439">
+                            Sekadau
+                            </option>
+                        
+                            <option value="42774">
+                            Selayar
+                            </option>
+                        
+                            <option value="263">
+                            Seluma
+                            </option>
+                        
+                            <option value="9">
+                            Semarang
+                            </option>
+                        
+                            <option value="42502">
+                            Sengkang
+                            </option>
+                        
+                            <option value="42501">
+                            Sentani
+                            </option>
+                        
+                            <option value="42845">
+                            Seram Bagian Barat
+                            </option>
+                        
+                            <option value="42846">
+                            Seram Bagian Timur
+                            </option>
+                        
+                            <option value="84">
+                            Serang
+                            </option>
+                        
+                            <option value="42839">
+                            Serdang Bedagai
+                            </option>
+                        
+                            <option value="42894">
+                            Seruyan
+                            </option>
+                        
+                            <option value="235">
+                            Siak
+                            </option>
+                        
+                            <option value="154">
+                            Sibolga
+                            </option>
+                        
+                            <option value="394">
+                            Sidoarjo
+                            </option>
+                        
+                            <option value="42880">
+                            Sigi
+                            </option>
+                        
+                            <option value="218">
+                            Sijunjung
+                            </option>
+                        
+                            <option value="42913">
+                            Sikka
+                            </option>
+                        
+                            <option value="195">
+                            Simalungun
+                            </option>
+                        
+                            <option value="175">
+                            Simeulue
+                            </option>
+                        
+                            <option value="42775">
+                            Sindenreng Rappang
+                            </option>
+                        
+                            <option value="115">
+                            Singkawang
+                            </option>
+                        
+                            <option value="42776">
+                            Sinjai
+                            </option>
+                        
+                            <option value="445">
+                            Sintang
+                            </option>
+                        
+                            <option value="396">
+                            Situbondo
+                            </option>
+                        
+                            <option value="414">
+                            Sleman
+                            </option>
+                        
+                            <option value="10">
+                            Solo
+                            </option>
+                        
+                            <option value="147">
+                            Solok
+                            </option>
+                        
+                            <option value="42777">
+                            Soppeng
+                            </option>
+                        
+                            <option value="130">
+                            Sorong
+                            </option>
+                        
+                            <option value="42927">
+                            Sorong Selatan
+                            </option>
+                        
+                            <option value="356">
+                            Sragen
+                            </option>
+                        
+                            <option value="316">
+                            Subang
+                            </option>
+                        
+                            <option value="80">
+                            Subulussalam
+                            </option>
+                        
+                            <option value="97">
+                            Sukabumi
+                            </option>
+                        
+                            <option value="42895">
+                            Sukamara
+                            </option>
+                        
+                            <option value="357">
+                            Sukoharjo
+                            </option>
+                        
+                            <option value="42914">
+                            Sumba Barat
+                            </option>
+                        
+                            <option value="42915">
+                            Sumba Barat Daya
+                            </option>
+                        
+                            <option value="42916">
+                            Sumba Tengah
+                            </option>
+                        
+                            <option value="42917">
+                            Sumba Timur
+                            </option>
+                        
+                            <option value="427">
+                            Sumbawa
+                            </option>
+                        
+                            <option value="42903">
+                            Sumbawa Barat
+                            </option>
+                        
+                            <option value="318">
+                            Sumedang
+                            </option>
+                        
+                            <option value="398">
+                            Sumenep
+                            </option>
+                        
+                            <option value="93">
+                            Sungai Penuh
+                            </option>
+                        
+                            <option value="42804">
+                            Supiori
+                            </option>
+                        
+                            <option value="7">
+                            Surabaya
+                            </option>
+                        
+                            <option value="51">
+                            Surakarta
+                            </option>
+                        
+                            <option value="42865">
+                            Tabalong
+                            </option>
+                        
+                            <option value="450">
+                            Tabanan
+                            </option>
+                        
+                            <option value="42778">
+                            Takalar
+                            </option>
+                        
+                            <option value="42928">
+                            Tambrauw
+                            </option>
+                        
+                            <option value="42866">
+                            Tanah Bambu
+                            </option>
+                        
+                            <option value="220">
+                            Tanah Datar
+                            </option>
+                        
+                            <option value="42867">
+                            Tanah Laut
+                            </option>
+                        
+                            <option value="42947">
+                            Tana Tidung
+                            </option>
+                        
+                            <option value="42779">
+                            Tana Toraja
+                            </option>
+                        
+                            <option value="42780">
+                            Tana Toraja Utara
+                            </option>
+                        
+                            <option value="4">
+                            Tangerang
+                            </option>
+                        
+                            <option value="85">
+                            Tangerang Selatan
+                            </option>
+                        
+                            <option value="291">
+                            Tanggamus
+                            </option>
+                        
+                            <option value="206">
+                            Tanjung Balai
+                            </option>
+                        
+                            <option value="251">
+                            Tanjung Jabung Barat
+                            </option>
+                        
+                            <option value="252">
+                            Tanjung Jabung Timur
+                            </option>
+                        
+                            <option value="476">
+                            Tanjung Pinang
+                            </option>
+                        
+                            <option value="76">
+                            Tanjung Selor
+                            </option>
+                        
+                            <option value="196">
+                            Tapanuli Selatan
+                            </option>
+                        
+                            <option value="197">
+                            Tapanuli Tengah
+                            </option>
+                        
+                            <option value="198">
+                            Tapanuli Utara
+                            </option>
+                        
+                            <option value="42868">
+                            Tapin
+                            </option>
+                        
+                            <option value="42948">
+                            Tarakan
+                            </option>
+                        
+                            <option value="119">
+                            Tarakan
+                            </option>
+                        
+                            <option value="98">
+                            Tasikmalaya
+                            </option>
+                        
+                            <option value="156">
+                            Tebing Tinggi
+                            </option>
+                        
+                            <option value="253">
+                            Tebo
+                            </option>
+                        
+                            <option value="104">
+                            Tegal
+                            </option>
+                        
+                            <option value="42929">
+                            Teluk Bintuni
+                            </option>
+                        
+                            <option value="42930">
+                            Teluk Wondama
+                            </option>
+                        
+                            <option value="359">
+                            Temanggung
+                            </option>
+                        
+                            <option value="125">
+                            Ternate
+                            </option>
+                        
+                            <option value="126">
+                            Tidore Kepulauan
+                            </option>
+                        
+                            <option value="42918">
+                            Timor Tengah Selatan
+                            </option>
+                        
+                            <option value="42919">
+                            Timor Tengah Utara
+                            </option>
+                        
+                            <option value="199">
+                            Toba Samosir
+                            </option>
+                        
+                            <option value="42881">
+                            Tojo Una-una
+                            </option>
+                        
+                            <option value="42805">
+                            Tolikara
+                            </option>
+                        
+                            <option value="42882">
+                            Toli-toli
+                            </option>
+                        
+                            <option value="141">
+                            Tomohon
+                            </option>
+                        
+                            <option value="399">
+                            Trenggalek
+                            </option>
+                        
+                            <option value="124">
+                            Tual
+                            </option>
+                        
+                            <option value="400">
+                            Tuban
+                            </option>
+                        
+                            <option value="292">
+                            Tulang Bawang
+                            </option>
+                        
+                            <option value="42832">
+                            Tulang Bawang Barat
+                            </option>
+                        
+                            <option value="401">
+                            Tulungagung
+                            </option>
+                        
+                            <option value="42781">
+                            Wajo
+                            </option>
+                        
+                            <option value="42943">
+                            Wakatobi
+                            </option>
+                        
+                            <option value="42806">
+                            Waropen
+                            </option>
+                        
+                            <option value="293">
+                            Way Kanan
+                            </option>
+                        
+                            <option value="360">
+                            Wonogiri
+                            </option>
+                        
+                            <option value="448">
+                            wonosari
+                            </option>
+                        
+                            <option value="361">
+                            Wonosobo
+                            </option>
+                        
+                            <option value="42807">
+                            Yahukimo
+                            </option>
+                        
+                            <option value="42808">
+                            Yalimo
+                            </option>
+                        
+                            <option value="42809">
+                            Yapen Waropen
+                            </option>
+                        
+                    </select>
+                </div>
+            </fieldset>-->
+            <fieldset class="dtkid__form__fieldset">
+                <div class="dtkid__form__fieldset__checkbox clearfix mt20 mb20">
+                    <div class="dtkid__form__fieldset__checkbox__item">
+                        <input data-validation="required" data-validation-error-msg="Anda harus menyetujui Syarat &amp; Ketentuan yang berlaku" id="agree" name="agree" type="checkbox">
+                        <label for="agree">Saya setuju dengan
+                            <a href="/help/syarat" target="_blank">
+                                syarat dan ketentuan
+                            </a> yang berlaku</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    <div class="clearfix"></div>
+    <input type="submit" onclick="gtmDataLayer()" id="submit-btn-registration" class="dtkid__form__btn" value="SIGN UP">
+    <p class="mb20"><span style="font-size:12px;">OR</span><br>SIGN UP WITH</p>
+					<div class="dtkid__form__socmed">
+						<a href="/auth/facebook/?clientId=10172&amp;redirectUrl=https%3A%2F%2Fadsmart.detik.com%2Fcallback%2F&amp;ui=popup" class="dtkid__form__socmed--fb"><span class="icon icon-logo_fb icon-logo_fb-dims"></span></a>
+						<a href="/auth/google/?clientId=10172&amp;redirectUrl=https%3A%2F%2Fadsmart.detik.com%2Fcallback%2F&amp;ui=popup" class="dtkid__form__socmed--gp"><span class="icon icon-logo_google icon-logo_google-dims"></span></a>
+                        <a href="/auth/apple/?clientId=10172&amp;redirectUrl=https%3A%2F%2Fadsmart.detik.com%2Fcallback%2F&amp;ui=popup" class="dtkid__form__socmed--ap"><span class="icon icon-logo_apple icon-logo_apple-dims"></span></a>
+					</div>
+
+    </div>
+
+</form>
+<div class="dtkid__form__bottom">
+    <h6>Sudah memiliki Akun? <a href="/auth/login/?clientId=10172&amp;redirectUrl=https%3A%2F%2Fadsmart.detik.com%2Fcallback%2F&amp;ui=popup">Login</a></h6>
+</div>
+
+<script>
+    $(document).ready(function () {
+        //$('#phone_code').val('62').trigger('change');
+        $('#country').chosen().change(function () {
+            var val_country = $(this).val();
+            $.ajax({
+                //url: base_url + "/js/api/city_by_country?country=" + val_country,
+                url: "https://connect.detik.com/js/api/city_by_country?country=" + val_country,
+                dataType: "json",
+                beforeSend: function(){
+                    $("#city").empty();
+                }
+            }).done(function( data ) {
+                var total_data = data.length;
+                if(total_data > 0 ){
+                    $.map( data, function( item ) {
+                        $('#city').append('<option value="'+item.id+'">' + item.name + '</option>');
+                    });
+                }else{
+                    $('#city').append('<option value="-">-</option>');
+                }
+                $("#city").trigger("chosen:updated");
+                $("#city").trigger("liszt:updated");
+            });
+            $.ajax({
+                //url: base_url + "/js/api/phone_code_by_country?country=" + val_country,
+                url: "https://connect.detik.com/js/api/phone_code_by_country?country=" + val_country,
+                dataType: "json",
+                beforeSend: function(){
+                }
+            }).done(function( data ) {
+                $('#phone_code').val(data["phone_code"]).trigger('change');
+                //console.log(data);
+                $("#phone_code").trigger("chosen:updated");
+                $("#phone_code").trigger("liszt:updated");
+            });
+        });
+    });
+
+    $(document).ready(function() {
+        $(".number_only").keydown(function(event) {
+            if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 ||
+                (event.keyCode == 65 && event.ctrlKey === true) ||
+                (event.keyCode >= 35 && event.keyCode <= 39)) {
+                return;
+            } else {
+                if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
+                    event.preventDefault();
+                }
+            }
+        });
+
+    });
+
+    function gtmDataLayer(){
+        try{
+            dataLayer.push({
+            'event': 'formsubmit',
+            'formmessage': 'Email Form Registration Submit',
+            'formname': 'Form Registration',
+            });
+
+        }catch(err){
+            console.log('dataLayer failed');
+        }
+    }
+
+    function preventDoubleSubmit(){
+        var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        if (($('#name')).val() != '' && ($('#password')).val() != '' && ($('#email')).val().match(pattern) && ($('#sex')).val() != '' && ($('#agree')).is(':checked')){
+            $("#submit-btn-registration").val('MOHON DITUNGGU').attr('disabled', 'disabled');
+        }
+    }
+</script>
+
+<script type="text/javascript" src="/static/detikid/js/date-registration.js"></script>
+</section>
+</div>
+<!--E:DETIK ID-->
+</body>
+</html>
